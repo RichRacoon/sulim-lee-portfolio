@@ -1,0 +1,326 @@
+/*GLOBAL STYLES----------------------------------------*/
+
+html *{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    color: #2699fb;
+}
+
+.row {
+    min-width: 1140px;
+}
+
+/*NAV STYLES----------------------------------------------*/
+
+nav {
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    position: fixed;
+    top:0;
+    z-index: 10000;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #bce0fd;
+    text-decoration: none;
+}
+
+.home-button a {
+    color: #fff;
+}
+
+.home-button a:hover {
+    color: #bce0fd;
+    text-decoration: none;
+}
+
+#navigation {
+    display: block;
+}
+
+nav .left-title {
+    padding: 11.5px 0 11.5px 30px;
+}
+
+nav .nav-container {
+    position: fixed;
+    right: 225px;;
+}
+
+nav .btn-container {
+    padding: 11.5px 0 11.5px 30px;
+    float: right;
+    color: #fff;
+    position: relative;
+    align-content: center;
+}
+
+nav .btn-container:hover {
+    cursor: pointer;
+}
+
+/*HERO STYLES-----------------------------------------------*/
+
+#hero {
+    background-color: #f1f9ff;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 750px;
+}
+
+#hero h1 {
+/*    padding-top: 40vh;*/
+    color: #fff;
+}
+
+#hero p {
+    width: 60%;
+    margin: auto;
+    color: #fff;
+}
+
+#hero-copy-container {
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*CONTENT STYLES----------------------------------------------*/
+
+.row .divider {
+    height: 20px;
+    background-color: #dedede;
+}
+
+.section {
+    background-color: #f1f9ff;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+}
+
+.section .section-content {
+    background-color: #bce0fd;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.section .section-content-vertical {
+    background-color: #bce0fd;
+    height: 60vh;
+    max-height: 60vh;
+}
+
+.section .section-copy-vertical {
+    padding-top: 50px;
+    height: 40vh;
+    max-height: 40vh;
+}
+
+.section .section-copy-vertical h2 {
+    padding-top: 100px;
+}
+    
+.section .section-content .clickable-img {
+    float: left;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+a img {
+    width: 100%;
+}
+
+.section .section-content-vertical .clickable-img {
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+.section .section-content .clickable-img-2 {
+/*    float: left;*/
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.section .section-content .clickable-img-small {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+img {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+}
+
+.section .section-copy {
+}
+
+.section-copy h2 {
+    text-align: left;
+    padding: 75px 50px 0 50px;
+}
+.section-copy p {
+    text-align: left;
+    padding: 20px 50px 0 50px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.container.no-padding.no-margin {
+    padding: 0;
+    margin: 0;
+}
+
+.row .row {
+    min-width: 0;
+}
+
+.logos img {
+    width: 50%;
+    margin: auto;
+    border: none !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 10%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #000;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #000;
+}
+
+/*VIDEO CSS ------------------------------------------------------*/
+
+.section-video {
+    width: 60%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/*ANIMATION CSS -----------------------------------------------*/
+
+#section-1 .row .col-md-7 .section-content img {
+    opacity: 0;
+    transition: all 1s ease-out;
+    transform: scale(1.5);
+}
+
+#section-1 .row .col-md-7 .section-content {
+    transition: all .6s ease-out;
+}
+
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(1) {
+    opacity: 1 !important;
+    transform: scale(1);
+    transition-delay: 0.4s;
+     -webkit-transition-delay: 0.4s;
+}
+
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(2) {
+    opacity: 1 !important;
+    transition-delay: 0.6s;
+    transform: scale(1);
+     -webkit-transition-delay: 0.6s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(3) {
+    opacity: 1 !important;
+    transition-delay: 0.8s;
+    transform: scale(1);
+     -webkit-transition-delay: 0.8s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(4) {
+    opacity: 1 !important;
+    transition-delay: 1s;
+    transform: scale(1);
+     -webkit-transition-delay: 1s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(5) {
+    opacity: 1 !important;
+    transition-delay: 1.2s;
+    transform: scale(1);
+     -webkit-transition-delay: 1.2s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(6) {
+    opacity: 1 !important;
+    transition-delay: 1.4s;
+    transform: scale(1);
+     -webkit-transition-delay: 1.4s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(7) {
+    opacity: 1 !important;
+    transition-delay: 1.6s;
+    transform: scale(1);
+     -webkit-transition-delay: 1.6s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(8) {
+    opacity: 1 !important;
+    transition-delay: 1.8s;
+    transform: scale(1);
+     -webkit-transition-delay: 1.8s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(9) {
+    opacity: 1 !important;
+    transition-delay: 2s;
+    transform: scale(1);
+     -webkit-transition-delay: 2s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(10) {
+    opacity: 1 !important;
+    transition-delay: 2.2s;
+    transform: scale(1);
+     -webkit-transition-delay: 2.2s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(11) {
+    opacity: 1 !important;
+    transition-delay: 2.4s;
+    transform: scale(1);
+     -webkit-transition-delay: 2.4s;
+}
+#section-1.opacity-trigger .row .col-md-7 .section-content img:nth-child(12) {
+    opacity: 1 !important;
+    transition-delay: 2.6s;
+    transform: scale(1);
+     -webkit-transition-delay: 2.6s;
+}
